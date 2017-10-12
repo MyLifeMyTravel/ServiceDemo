@@ -17,12 +17,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".FirstServiceActivity" />
+        <activity android:name=".BoundServiceActivity" />
 
         <service
             android:name=".service.FirstService"
             android:enabled="true"
             android:exported="true" />
 
+        <service
+            android:name=".service.BoundService"
+            android:enabled="true"
+            android:exported="true" />
     </application>
 
 </manifest>

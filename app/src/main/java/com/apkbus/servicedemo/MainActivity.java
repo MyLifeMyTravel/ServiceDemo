@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private void initItem() {
         mItemList = new ArrayList<>();
         mItemList.add(new ItemInfo("FirstService", FirstServiceActivity.class));
+        mItemList.add(new ItemInfo("BoundService", BoundServiceActivity.class));
     }
 
     private void initView() {
