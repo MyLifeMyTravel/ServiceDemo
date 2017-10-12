@@ -28,6 +28,14 @@ public class FirstService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d(TAG, TAG + " onStartCommand");
+        Log.d(TAG, "当前线程ID：" + Thread.currentThread().getId());
+        //让 Service 所在的线程 sleep 10秒
+        //如果为主线程，则会出现 ANR
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return super.onStartCommand(intent, flags, startId);
     }
 
