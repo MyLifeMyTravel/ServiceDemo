@@ -19,19 +19,22 @@
         <activity android:name=".FirstServiceActivity" />
         <activity android:name=".BoundServiceActivity" />
         <activity android:name=".ForegroundServiceActivity" />
+        <activity android:name=".ServiceLifeCycleActivity" />
 
         <service
             android:name=".service.FirstService"
             android:enabled="true"
             android:exported="true" />
-
         <service
             android:name=".service.BoundService"
             android:enabled="true"
             android:exported="true" />
-
         <service
             android:name=".service.ForegroundService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".service.LifeCycleService"
             android:enabled="true"
             android:exported="true" />
     </application>

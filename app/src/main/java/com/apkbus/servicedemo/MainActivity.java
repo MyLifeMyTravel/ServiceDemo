@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mItemList.add(new ItemInfo("FirstService", FirstServiceActivity.class));
         mItemList.add(new ItemInfo("BoundService", BoundServiceActivity.class));
         mItemList.add(new ItemInfo("ForegroundService", ForegroundServiceActivity.class));
+        mItemList.add(new ItemInfo("LifeCycleService", ServiceLifeCycleActivity.class));
     }
 
     private void initView() {
