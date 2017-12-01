@@ -12,6 +12,8 @@ Service 作为 Android 四大组件之一，涉及到的内容非常多，这里
 
 **onBind()**:当应用组件调用 `bindService()` 方法时，系统会回调该方法。通过 `bindService()` 可以实现 RPC 服务(Remote Procedure Calls)。
 
+**onUnbind()**:当应用组件调用 `unbindService()` 方法时，系统会回调该方法。
+
 **onCreate()**: Service 第一次创建时回调。该方法在 `onStartCommand()` 和 `onBind()` 之前回调。
 
 **onDestroy()**: Service 销毁时调用。我们应该在这里回收那些不再需要的资源，如：线程、注册广播已经监听器。
