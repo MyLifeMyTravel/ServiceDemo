@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".FirstServiceActivity" />
         <activity android:name=".BoundServiceActivity" />
+        <activity android:name=".ForegroundServiceActivity" />
 
         <service
             android:name=".service.FirstService"
@@ -26,6 +27,11 @@
 
         <service
             android:name=".service.BoundService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".service.ForegroundService"
             android:enabled="true"
             android:exported="true" />
     </application>
