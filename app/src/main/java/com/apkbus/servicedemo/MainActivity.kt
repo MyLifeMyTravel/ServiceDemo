@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         mItemList!!.add(ItemInfo("FirstService", FirstServiceActivity::class.java))
         mItemList!!.add(ItemInfo("BoundService", BoundServiceActivity::class.java))
         mItemList!!.add(ItemInfo("ForegroundService", ForegroundServiceActivity::class.java))
+        mItemList!!.add(ItemInfo("ServiceLifeCycle", ServiceLifeCycleActivity::class.java))
     }
 
     private fun initView() {
