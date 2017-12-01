@@ -22,6 +22,7 @@ Service 作为 Android 四大组件之一，涉及到的内容非常多，这里
 新建一个项目 **ServiceDemo**，在 `service` 包下创建 `FirstService.java` 类(mac:Command + N)。
 
 ![WX20171009-135151](http://odsdowehg.bkt.clouddn.com/WX20171009-135151.png)
+
 在弹出的对话框中，我们可以看到有两个选项，其中 [Exported](https://developer.android.com/guide/topics/manifest/service-element.html#exported) 属性表示是否允许其它程序启动该 Service。[Enabled](https://developer.android.com/guide/topics/manifest/service-element.html#enabled) 属性表示服务是否被启用。
 
 `FirstService.java` 代码如下：
@@ -693,6 +694,7 @@ public class ForegroundService extends Service {
 
 ## 10.3 Service 的生命周期
 通过前面的学习，想必大家对 Service 的生命周期有了一定的了解。
+
 ![service_lifecycle](http://odsdowehg.bkt.clouddn.com/service_lifecycle.png)
 
 上图是 Android 官方给出的 Service 生命周期示意图，可以帮助大家更加直观的了解 Service 的生命周期。
@@ -782,6 +784,7 @@ public class LifeCycleService extends Service {
 ```
 
 UI效果如下：
+
 ![WechatIMG185 w360](http://odsdowehg.bkt.clouddn.com/WechatIMG185.jpeg)
 
 接下来是 `ServiceLifeCycleActivity`，代码如下：
