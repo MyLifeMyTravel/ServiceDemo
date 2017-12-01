@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apkbus.servicedemo.BoundServiceActivity">
+
+    <Button
+        android:id="@+id/btn_bind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind Service"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UnBind Service"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 + 2 = ?"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10 - 1 = ?"
+        android:textAllCaps="false" />
+</LinearLayout>

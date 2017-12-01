@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     private fun initItem() {
         mItemList = ArrayList()
         mItemList!!.add(ItemInfo("FirstService", FirstServiceActivity::class.java))
+        mItemList!!.add(ItemInfo("BoundService", BoundServiceActivity::class.java))
     }
 
     private fun initView() {
