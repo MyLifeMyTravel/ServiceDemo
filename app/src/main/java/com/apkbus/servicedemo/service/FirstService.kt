@@ -19,6 +19,15 @@ class FirstService : Service() {
 
     override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
         Log.d(TAG, TAG + " onStartCommand")
+        Log.d(TAG, "当前线程ID：" + Thread.currentThread().id)
+        //让 Service 所在的线程 sleep 10秒
+        //如果为主线程，则会出现 ANR
+        try {
+            Thread.sleep(10000)
+        } catch (e: InterruptedException) {
+            e.printStackTrace()
+        }
+
         return super.onStartCommand(intent, flags, startId)
     }
 
@@ -33,3 +42,4 @@ class FirstService : Service() {
         private val TAG = FirstService::class.java.simpleName
     }
 }
+
